@@ -18,7 +18,29 @@
 # Notes A hyphen will separate the two letters in the string.
 
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-start, end = alphabet.split('-')
-user_range = input("Enter a range of letters (e.g., a-z): ")
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+# start, end = alphabet.split('-')
+# user_range = input("Enter a range of letters (e.g., a-z): ")
+
+
+
+# Application 1
+
+str = "ghost"
+result = ''
+for char in str:
+    result += char * 2
+print(result)
+
+
+
+
+# Application 2
+
+str_range = "h-w"
+start, end = str_range.split('-')
+start_code = ord(start)
+end_code = ord(end)
+result = ''.join(chr(item) for item in range(start_code, end_code + 1))
+print(result)  
 
